@@ -20,8 +20,8 @@ from django.urls import path, include
 from support2_proj import settings
 
 urlpatterns = [
-    path('project1/admin/', admin.site.urls),
-    path('project1/api/v1/', include("support2_app.urls"))
+    path('project2/admin/', admin.site.urls),
+    path('project2/api/v1/', include("support2_app.urls"))
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
